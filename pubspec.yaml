@@ -1,0 +1,46 @@
+name: flutter_firebase
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.1
+
+  cupertino_icons: ^1.0.6
+  firebase_core: ^2.31.0
+  cloud_firestore: ^4.17.3
+  firebase_storage: ^11.7.6
+  image_picker: ^1.1.1
+  firebase_ui_auth: ^1.14.0
+  firebase_ui_localizations: ^1.11.0
+
+dependency_overrides:
+  firebase_ui_localizations:
+    git:
+      url: https://github.com/chuyentt/FirebaseUI-Flutter.git
+      path: packages/firebase_ui_localizations
+      ref: add-vietnamese-language
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+  fonts:
+    - family: SocialIcons
+      fonts:
+        - asset: packages/firebase_ui_auth/fonts/SocialIcons.ttf                  
